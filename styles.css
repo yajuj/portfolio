@@ -113,6 +113,10 @@ a, a:visited, a:active {
   align-items: center;
 
 }
+
+.info__skills ul {
+  text-align: left;
+}
 @media screen and (max-width: 370px) {
   .skill {
     padding: 3px 6px;
