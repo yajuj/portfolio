@@ -75,19 +75,18 @@ aside {
   margin: 20px;
 }
 
-.sourses {
+.information {
+  flex-direction: column;
   display: flex;
-  justify-content: space-around;
-  width: 50%;
-  margin: 20px auto 0;
+  gap: 10px;
 }
 
-.sourses__box {
-  width: 30px;
-  height: 30px;
-  color: #00ab71;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.information__box {
+  color:#00ab71;
+  font-weight: normal;
 }
 
+a, a:visited, a:active {
+  text-decoration: none;
+  color: unset;
+}
