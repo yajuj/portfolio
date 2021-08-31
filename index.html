@@ -30,18 +30,10 @@
           <div class='info__img'>
             <img src="./img/cat.png" />
           </div>
-          <h2>Hello.</h2>
-          <p>My name is Timur i'am a front-end developer.<br />
-            This is my small portfolio.
-          </p>
-          <div class="info__skills">
-            <h3>My skills</h3>
-            <ul>
-              <li>HTML, CSS, JavaScript.</li>
-              <li>React.</li>
-              <li>Redux, Redux-Saga.</li>
-            </ul>
+          <div class="info__about">
+            <div class="info__about_inner"></div>
           </div>
+          <span class="language">на русском...</span>
         </div>
         <div class='information'>
           <div class='information__box'>
@@ -91,6 +83,56 @@
       </div>
     </main>
   </div>
+  <script>
+    const description = document.querySelector('.info__about_inner');
+    document.querySelector('.language').addEventListener('click', () => {
+      russian = !russian;
+      document.querySelector('.language').textContent = !russian ? 'на русском...' : 'in english...';
+      render()
+    })
+
+    let russian = false;
+
+    const render = () => {
+
+      description.innerHTML = russian ?
+        (`
+        <div>
+          <h2>Привет.</h2>
+          <p>Меня зовут Тимур, я frontend-developer.<br />
+            Это моё небольшое портфолио.❤️
+          </p>
+          <div class="info__skills">
+            <h3>Мои навыки.</h3>
+            <ul>
+              <li>HTML, CSS, JavaScript.</li>
+              <li>React.</li>
+              <li>Redux, Redux-Saga.</li>
+            </ul>
+          </div>
+        </div>
+        `)
+        :
+        (`
+        <div>
+          <h2>Hello.</h2>
+          <p>My name is Timur i'am a front-end developer.<br />
+              This is my small portfolio.
+           </p>
+          <div class="info__skills">
+            <h3>My skills.</h3>
+            <ul>
+              <li>HTML, CSS, JavaScript.</li>
+              <li>React.</li>
+              <li>Redux, Redux-Saga.</li>
+            </ul>
+          </div>
+        </div>
+        `)
+    }
+
+    render()
+  </script>
 </body>
 
 </html>
