@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <title>Portfolio</title>
-</head>
-
-<body>
-  <!--
+  <body>
+    <!--
 		Ребята не стоит вскрывать этот код. Вы молодые, шутливые, вам все легко. 
 		Это не то. 
 		Это не Чикатило и даже не архивы спецслужб. Сюда лучше не лезть. 
@@ -23,80 +29,94 @@
 		Я вполне понимаю что данным сообщением вызову дополнительный интерес, но хочу сразу предостеречь пытливых - стоп. 
 		Остальные просто не найдут...
     -->
-  <div class="container">
-    <aside>
-      <div class="info">
-        <div>
-          <div class='info__img'>
-            <img src="./img/cat.png" />
+    <div class="container">
+      <aside>
+        <div class="info">
+          <div>
+            <div class="info__img">
+              <img src="./img/cat.png" />
+            </div>
+            <div class="info__about">
+              <div class="info__about_inner"></div>
+            </div>
+            <span class="language">на русском...</span>
           </div>
-          <div class="info__about">
-            <div class="info__about_inner"></div>
-          </div>
-          <span class="language">на русском...</span>
-        </div>
-        <div class='information'>
-          <div class='information__box'>
-
-            <a href='https://t.me/Tlatoany' target='_blank'>
-              <i class="fab fa-telegram-plane"></i>
-              Tlatoani
-            </a>
-          </div>
-          <div class='information__box'>
-
-            <a href="mailto:noticethatred@gmail.com">
-              <i class="fas fa-at"></i>
-              noticethatred@gmail.com
-            </a>
+          <div class="information">
+            <div class="information__box">
+              <a href="https://t.me/Tlatoany" target="_blank">
+                <i class="fab fa-telegram-plane"></i>
+                Tlatoani
+              </a>
+            </div>
+            <div class="information__box">
+              <a href="mailto:noticethatred@gmail.com">
+                <i class="fas fa-at"></i>
+                noticethatred@gmail.com
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </aside>
-    <main>
-      <div class="portfolio__item">
-        <a href="https://movie-search-app-yajuj.herokuapp.com/" target="_blank">
-          <img class="portfolio__item__img" src="./img/movie-app.png" alt='crwn-app example' />
-        </a>
-        <div class="skills">
-          <span class="skill">React</span>
-          <span class="skill">Redux</span>
+      </aside>
+      <main>
+        <div class="portfolio__item">
+          <a
+            href="https://movie-search-app-yajuj.herokuapp.com/"
+            target="_blank"
+          >
+            <img
+              class="portfolio__item__img"
+              src="./img/movie-app.png"
+              alt="crwn-app example"
+            />
+          </a>
+          <div class="skills">
+            <span class="skill">React</span>
+            <span class="skill">Redux</span>
+          </div>
         </div>
-      </div>
-      <div class="portfolio__item">
-        <a href="https://yajujapp-live.herokuapp.com/" target="_blank">
-          <img class="portfolio__item__img" src="./img/crwn-app.png" alt='crwn-app example' />
-        </a>
-        <div class="skills">
-          <span class="skill">React</span>
-          <span class="skill">Redux</span>
-          <span class="skill">Redux-Saga</span>
+        <div class="portfolio__item">
+          <a href="https://yajujapp-live.herokuapp.com/" target="_blank">
+            <img
+              class="portfolio__item__img"
+              src="./img/crwn-app.png"
+              alt="crwn-app example"
+            />
+          </a>
+          <div class="skills">
+            <span class="skill">React</span>
+            <span class="skill">Redux</span>
+            <span class="skill">Redux-Saga</span>
+          </div>
         </div>
-      </div>
-      <div class="portfolio__item">
-        <a href="https://quotes-machine-yajuj.herokuapp.com/" target="_blank">
-          <img class="portfolio__item__img" src="./img/quotes-machine.png" alt='crwn-app example' />
-        </a>
-        <div class="skills">
-          <span class="skill">React</span>
+        <div class="portfolio__item">
+          <a href="https://quotes-machine-yajuj.herokuapp.com/" target="_blank">
+            <img
+              class="portfolio__item__img"
+              src="./img/quotes-machine.png"
+              alt="crwn-app example"
+            />
+          </a>
+          <div class="skills">
+            <span class="skill">React</span>
+          </div>
         </div>
-      </div>
-    </main>
-  </div>
-  <script>
-    const description = document.querySelector('.info__about_inner');
-    document.querySelector('.language').addEventListener('click', () => {
-      document.querySelector('.language').textContent = russian ? 'на русском...' : 'in english...';
-      russian = !russian;
-      render()
-    })
+      </main>
+    </div>
+    <script>
+      const description = document.querySelector('.info__about_inner');
+      document.querySelector('.language').addEventListener('click', () => {
+        document.querySelector('.language').textContent = russian
+          ? 'на русском...'
+          : 'in english...';
+        russian = !russian;
+        render();
+      });
 
-    let russian = false;
+      let russian = false;
 
-    const render = () => {
-
-      description.innerHTML = russian ?
-        (`
+      const render = () => {
+        description.innerHTML = russian
+          ? `
         <div>
           <h2>Привет.</h2>
           <p>Меня зовут Тимур, я frontend-developer.<br />
@@ -106,14 +126,13 @@
             <h3>Мои навыки.</h3>
             <ul>
               <li>HTML, CSS, JavaScript.</li>
-              <li>React.</li>
+              <li>React, React-Native.</li>
               <li>Redux, Redux-Saga.</li>
             </ul>
           </div>
         </div>
-        `)
-        :
-        (`
+        `
+          : `
         <div>
           <h2>Hello.</h2>
           <p>My name is Timur i'am a front-end developer.<br />
@@ -123,16 +142,15 @@
             <h3>My skills.</h3>
             <ul>
               <li>HTML, CSS, JavaScript.</li>
-              <li>React.</li>
+              <li>React, React-Native.</li>
               <li>Redux, Redux-Saga.</li>
             </ul>
           </div>
         </div>
-        `)
-    }
+        `;
+      };
 
-    render()
-  </script>
-</body>
-
+      render();
+    </script>
+  </body>
 </html>

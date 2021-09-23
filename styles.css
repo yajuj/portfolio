@@ -20,7 +20,6 @@ body {
   }
 }
 
-
 main {
   min-width: 300px;
   display: flex;
@@ -84,11 +83,13 @@ aside {
 }
 
 .information__box {
-  color:#00ab71;
+  color: #00ab71;
   font-weight: normal;
 }
 
-a, a:visited, a:active {
+a,
+a:visited,
+a:active {
   text-decoration: none;
   color: unset;
 }
@@ -105,13 +106,15 @@ a, a:visited, a:active {
 
 .skill {
   padding: 5px 10px;
-  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.8)
+  );
   box-shadow: 0 0 3px;
   margin: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .language {
@@ -135,4 +138,3 @@ a, a:visited, a:active {
     font-size: 10px;
   }
 }
-
